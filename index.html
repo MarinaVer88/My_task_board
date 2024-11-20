@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>My task board</title>
+    
+</head>
+
+<body>
+    <div id="container">
+        <h1>My Task Board</h1>
+        <div class="form">
+            <textarea name="task" id="task" placeholder="Enter your task here..." cols="20" rows="4"></textarea>
+            <label id="dateAndTimeLabel">Limit your date and time:</label>
+            <input type="date" id="date">
+            <input type="time" id="time">
+            <input class="button" type="button" onclick="onCreateNoteClicked()" value="Add note"/>
+            <input class="button" type="button" onclick="onClearInputClicked()" value="Reset note"/>
+            <p id="paragraghError"></p>
+        </div>
+    </div>
+    <div id="notesContainer"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
